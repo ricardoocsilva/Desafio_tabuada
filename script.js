@@ -68,7 +68,7 @@ function rodar(){
     fs = 1.5
     var ciclo = 0
     direita.style.fontSize = fs + 'em'
-    while (Number(document.querySelector('#direita').clientHeight) / Number(document.querySelector('#res').clientHeight) > 0.75 && ciclo<30) {
+    while (Number(document.querySelector('#direita').clientHeight) / Number(document.querySelector('#res').clientHeight) > 0.85 && ciclo<30) {
         ciclo++
        fs -= 0.1
        direita.style.fontSize = fs + 'em'
