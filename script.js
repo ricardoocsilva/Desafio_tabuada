@@ -59,18 +59,18 @@ function rodar(){
     fs = 2
     var ciclo = 0
     centro.style.fontSize = fs + 'em'
-    while (Number(document.querySelector('#centro').clientHeight) / Number(document.querySelector('#res').clientHeight) > 0.9 && ciclo<30) {
+    while (Number(document.querySelector('#centro').clientHeight) / Number(document.querySelector('#res').clientHeight) > 0.9 && ciclo<60) {
         ciclo++
-       fs -= 0.1
+       fs -= 0.05
        centro.style.fontSize = fs + 'em'
     }
 
     fs = 1.5
     var ciclo = 0
     direita.style.fontSize = fs + 'em'
-    while (Number(document.querySelector('#direita').clientHeight) / Number(document.querySelector('#res').clientHeight) > 0.85 && ciclo<30) {
+    while (Number(document.querySelector('#direita').clientHeight) / Number(document.querySelector('#res').clientHeight) > 0.85 && ciclo<60) {
         ciclo++
-       fs -= 0.1
+       fs -= 0.05
        direita.style.fontSize = fs + 'em'
        esquerda.style.fontSize = fs + 'em'
     }
